@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Foro de Comentarios</title>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Foro de Comentarios</h1>
+        
+        <div class="content">
+            <form id="foro">
+                <label for="usuario">Nombre:</label>
+                <input type="text" id="usuario" required>
+                <br>
+                <label for="comentario">Comentario:</label>
+                <textarea id="comentario" rows="4" cols="50" required></textarea>
+                <br>
+                <button type="submit">Publicar Comentario</button>
+            </form>
+            
+            <ul id="comentarios" class="comment-list"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
